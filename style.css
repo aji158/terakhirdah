@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .container {
@@ -18,7 +19,8 @@ body {
   background: white;
   border-radius: 15px;
   overflow: hidden;
-  width: 900px;
+  width: 100%;
+  max-width: 900px; /* agar fleksibel di berbagai ukuran */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -124,4 +126,35 @@ body {
 .signup-link a {
   color: #0043ce;
   text-decoration: none;
+}
+
+/* ======================== RESPONSIVE ======================== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .welcome-section, .login-form {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .welcome-section h2 {
+    font-size: 24px;
+  }
+
+  .welcome-section p {
+    font-size: 14px;
+  }
+
+  .login-form h3 {
+    font-size: 20px;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
