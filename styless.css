@@ -43,6 +43,10 @@ a:hover {
     font-size: 28px;
   }
   
+  .navbar-nav .nav-link {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+  }
   
   
   .lora-font {
