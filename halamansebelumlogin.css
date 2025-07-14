@@ -74,9 +74,4 @@ main {
     color: white !important;
 }
 
-/* Tambahan hover agar lebih interaktif */
-.navbar-nav .nav-link:hover,
-.dropdown-menu .dropdown-item:hover {
-    background-color: #ffffff22;
-    color: #ffdd57 !important;
-}
+
