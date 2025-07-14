@@ -1,145 +1,94 @@
-/* Import Font Lora dari Google Fonts di bagian <head> HTML
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
-*/
-
-/* Logo navbar */
 .logo {
     width: 50px;
     height: 50px;
-    margin: 0 15px;
-    border-radius: 50px;
+    margin-right: 15px;
+    border-radius: 50px ;
+    margin-left: 15px;
+    height: 50px;
 }
 
-/* Navbar Font dan Warna */
+a:hover {
+  background-color: blue;
+  color: black;
+}
+
+.carousel-inner img {
+  width: 10%;           /* ubah ke nilai seperti 80% jika ingin lebih kecil */
+  height: 500px;          /* menjaga rasio aspek /     / batas tinggi maksimum */
+  object-fit: cover;     /* menyesuaikan gambar agar tetap rapi */
+  border-radius: 30px;   /* opsional: beri sudut membulat */
+}
+
 .navbar-nav .nav-link,
 .navbar-nav .dropdown-toggle,
 .dropdown-menu .dropdown-item {
-    font-family: 'Lora', serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: white !important;
+    font-family: 'Lora', sans-serif; /* Ganti dengan font lain sesuai kebutuhan */
+    font-size: 20px;                  /* Ukuran huruf */
+    font-weight: 500;                 /* Ketebalan huruf */
+    color: white !important;         /* Warna teks */
 }
 
-/* Hover efek navbar */
-.navbar-nav .nav-link:hover,
+/* Untuk dropdown menu */
 .dropdown-menu .dropdown-item:hover {
-    background-color: #ffffff22;
-    color: #ffdd57 !important;
+    background-color: #0056b3;
+    color: #ffffff !important;
 }
 
-/* Teks aktif */
+/* Jika ingin mengatur font logo juga */
+.navbar .logo {
+    max-height: 50px;
+    margin-right: 15px;
+}
+
+/* Responsive toggle icon style (optional) */
+.navbar-toggler {
+    border-color: white;
+}
+
+/* Ubah warna teks saat aktif */
 .navbar-nav .nav-link.active {
     color: white !important;
 }
-
-/* Gambar carousel */
-.carousel-inner img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 30px;
-}
-
-/* Tombol di dalam carousel */
+/* Target tombol "login" di dalam carousel-caption */
 .carousel-caption .btn.btn-primary {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 20px;
+    font-size: 20px;  /* Ganti ukuran sesuai kebutuhan */
+    font-weight: bold; /* Opsional: untuk membuat huruf tebal */
+    padding: 10px 20px; /* Opsional: atur ruang di dalam tombol */
 }
 
-/* Footer tetap di bawah */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'Lora', serif;
 }
 
 main {
     flex: 1;
 }
 
-/* Logo max-height */
-.navbar .logo {
-    max-height: 50px;
-    margin-right: 15px;
-}
-
-/* Tombol toggle responsive */
-.navbar-toggler {
-    border-color: white;
-}
-
-/* Tentang / about section */
-.about-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    text-align: justify;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #333;
-}
-
-/* Judul about */
-.about-section h2 {
-    text-align: center;
-    font-size: 36px;
-    color: #0d6efd;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-/* Link umum */
-a {
-    text-decoration: none;
-    color: #0d6efd;
-}
-
-/* Hover link umum yang bukan tombol */
-a:not(.btn):hover {
-    text-decoration: underline;
-}
-
-/* Tabel besar */
-.table-large {
-    font-size: 22px;
-}
-
-/* Tabel header dan isi */
-td {
-    border: 2px solid #000 !important;
-    vertical-align: top;
-}
-
-th {
-    background-color: #0d6efd !important;
-    color: white !important;
-    border: 2px solid #000 !important;
-}
-
-/* Header Rekap */
-.rekap-header {
-    width: 100vw;
-    margin: 0;
-    padding: 20px 0;
-    background-color: #235772;
-    color: white;
-    text-align: center;
-    font-family: 'Lora', serif;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.rekap-header h2 {
-    margin: 0;
-    font-size: 28px;
-}
-
-/* Mobile responsive: sembunyikan login */
 @media (max-width: 768px) {
-    .login {
-        display: none;
-    }
+  .login {
+    display: none;
+  }
+}
+
+.about-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: justify;         /* Membuat tulisan sejajar kiri-kanan */
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #0d6efd;              /* Biru Bootstrap */
+  font-weight: bold;
+  margin-bottom: 20px;
 }
