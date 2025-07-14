@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>visual study room</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="halamansebelumlogin.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual Study Room</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="halamansebelumlogin.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-    <header data-bs-theme="dark">
-        <nav class="navbar navbar-expand-lg bg-primary">
-          <img src="v(1).png" alt="Logo" class="logo">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <!-- Slide 1 (aktif) -->
-              <div class="carousel-item active" data-bs-interval="100">
-                <img src="carausel.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-block text-start text-white">
-                  <a href="form_awal.html">
-                    <button type="button" class="btn btn-primary">Login</button>
-                  </a>
-                </div>
-              </div>
-            
-              <!-- Slide 2 -->
-              <div class="carousel-item" data-bs-interval="100">
-                <img src="carausel2.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-block text-start text-white">
-                  <a href="form_awal.html">
-                    <button type="button" class="btn btn-primary">Login</button>
-                  </a>
-                </div>
-              </div>
-            
-              <!-- Slide 3 -->
-              <div class="carousel-item" data-bs-interval="100">
-                <img src="carausel3.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-block d-md-block text-start text-white">
-                  <a href="form_awal.html">
-                    <button type="button" class="btn btn-primary">Login</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <img src="v (1).png" alt="Logo" class="logo" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="carausel.png" class="d-block w-100" alt="Slide 1" />
+          <div class="carousel-caption d-block text-start text-white">
+            <a href="Form_awal.html" class="btn btn-primary">Login</a>
+          </div>
         </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="carausel2.png" class="d-block w-100" alt="Slide 2" />
+          <div class="carousel-caption d-none d-md-block text-start text-white">
+            <a href="Form_awal.html" class="btn btn-primary">Login</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="carausel3.png" class="d-block w-100" alt="Slide 3" />
+          <div class="carousel-caption d-none d-md-block text-start text-white">
+            <a href="Form_awal.html" class="btn btn-primary">Login</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- About Us Section -->
+   <div class="about-section">
+  <h2>About Us</h2>
+  <p>Selamat datang di Visual Study Room, sebuah platform pembelajaran digital yang dirancang untuk membantu mahasiswa dalam mengakses materi kuliah, rekap ujian, dan latihan quiz secara mudah dan terstruktur.</p>
   
-<footer class="container mt-5">
-  <p class="float-end"><a href="#">Back to top</a></p>
-  <p>&copy; 2017–2023 Company, Inc. &middot; <a href="https://wa.me/085718948260?text=Hello" target="_blank" rel="noopener noreferrer">contact us</a></p>
+  <p>Website ini dibuat sebagai sarana pendukung kegiatan akademik, khususnya untuk tiga program studi utama: Sistem Informasi, Teknologi Informasi, dan Informatika. Melalui tampilan yang sederhana dan navigasi yang intuitif, pengguna dapat dengan cepat menemukan rekap materi, soal-soal penting, hingga tautan menuju sumber pembelajaran lainnya.</p>
+  
+  <p>Kami percaya bahwa akses belajar yang cepat dan terorganisir akan membantu mahasiswa lebih fokus dalam memahami materi dan mempersiapkan diri menghadapi ujian. Oleh karena itu, seluruh konten disusun berdasarkan struktur kurikulum yang umum digunakan, dan akan terus diperbarui sesuai kebutuhan.</p>
+  
+  <p>Visual Study Room dikembangkan sebagai bagian dari proyek pembelajaran dan terbuka untuk dikembangkan lebih lanjut. Kami terbuka terhadap saran dan kolaborasi untuk menjadikan situs ini lebih bermanfaat ke depannya.</p>
+  
+  <p>Terima kasih telah menggunakan Visual Study Room sebagai teman belajar Anda.</p>
+</div>
+  </main>
+
+  <footer class="container-fluid bg-primary text-white py-3 mt-5">
+    <p>&copy; 2017–2023 Company, Inc. &middot; 
+      <a href="https://wa.me/085718948260?text=Hello" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="text-white">
+         contact us
+    </a>
+  </p>
 </footer>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
