@@ -15,10 +15,12 @@ a:hover {
 .navbar-nav .nav-link,
 .navbar-nav .dropdown-toggle,
 .dropdown-menu .dropdown-item {
-    font-family: 'Arial', sans-serif; /* Ganti dengan font lain sesuai kebutuhan */
-    font-size: 20px;                  /* Ukuran huruf */
-    font-weight: 500;                 /* Ketebalan huruf */
-    color: white !important;         /* Warna teks */
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white !important;
+}
+
 }
 
 .carousel-inner img {
@@ -100,15 +102,3 @@ a:hover {
     font-weight: 600;
 }
 
-.navbar-nav .nav-link,
-.navbar-nav .dropdown-toggle,
-.dropdown-menu .dropdown-item {
-    font-family: 'Arial', sans-serif; /* atau 'Lora', tergantung mana yang dipilih */
-    font-size: 20px;                  
-    font-weight: 500;                 
-    color: white !important;         
-}
-.navbar-nav .nav-link {
-    font-family: 'Lora', serif;
-    font-weight: 600;
-}
