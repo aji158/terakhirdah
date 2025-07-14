@@ -86,3 +86,16 @@ a:hover {
 .table-large {
   font-size: 22px;
 }
+
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-toggle,
+.dropdown-menu .dropdown-item {
+    font-family: 'Arial', sans-serif; /* atau 'Lora', tergantung mana yang dipilih */
+    font-size: 20px;                  
+    font-weight: 500;                 
+    color: white !important;         
+}
+.navbar-nav .nav-link {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
