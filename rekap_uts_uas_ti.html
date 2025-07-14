@@ -11,57 +11,48 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <header data-bs-theme="dark">
-      <nav class="navbar navbar-expand-lg bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand text-white d-flex align-items-center" href="#">
-            <img src="logoV.png" alt="Logo" width="40" height="40" class="me-2">
-            Visual Study Room
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Menu kiri -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="halaman_utama.html">HOME</a>
-              </li>
-              <!-- Dropdown MATKUL -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">MATKUL</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="rekap_materi_sistem_informasi.html">Sistem Informasi</a></li>
-                  <li><a class="dropdown-item" href="rekap_materi_teknologi_informasi.html">Teknologi Informasi</a></li>
-                  <li><a class="dropdown-item" href="rekap_materi_informatika.html">Informatika</a></li>
+        <nav class="navbar navbar-expand-lg bg-primary">
+          <img src="logoV.png" alt="Logo" class="logo">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="halaman_utama.html">HOME</a>
+                     </li>
+                   
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">MATKUL</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="rekap_materi_sistem_informasi.html">Sistem Informasi</a></li>
+                    <li><a class="dropdown-item" href="rekap_materi_teknologi_informasi.html">Teknologi Informasi</a></li>
+                    <li><a class="dropdown-item" href="rekap_materi_informatika.html">Informatika</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">REKAP UJIAN</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="rekap_uts_uas_si.html">Sistem Informasi</a></li>
+                    <li><a class="dropdown-item" href="rekap_uts_uas_ti.html">Teknologi Informasi</a></li>
+                    <li><a class="dropdown-item" href="rekap_uts_uas_if.html">Informatika</a></li>
+                  </ul>
+                </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="quiz_si.html">QUIZ</a>
+                  </li>
                 </ul>
-              </li>
-              <!-- Dropdown UJIAN -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">REKAP UJIAN</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="rekap_uts_uas_si.html">Sistem Informasi</a></li>
-                  <li><a class="dropdown-item" href="rekap_uts_uas_ti.html">Teknologi Informasi</a></li>
-                  <li><a class="dropdown-item" href="rekap_uts_uas_if.html">Informatika</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="quiz_si.html">QUIZ</a>
-              </li>
-            </ul>
-    
-            <!-- Menu kanan -->
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                  <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
-                       alt="Akun" width="30" height="30" class="rounded-circle">
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end">
+                
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                 <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Akun" width="30" height="30" class="rounded-circle"></a>
+                  <ul class="dropdown-menu dropdown-menu-end">
                   <li><a class="dropdown-item" href="profil.html">Profil</a></li>
-                  <li><a class="dropdown-item" href="form_awal.html">Logout</a></li>
+                  <li><a class="dropdown-item" href="index.html">Logout</a></li>
                 </ul>
               </li>
             </ul>
