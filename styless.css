@@ -23,7 +23,7 @@ a:hover {
 
 .carousel-inner img {
   width: 10%;           /* ubah ke nilai seperti 80% jika ingin lebih kecil */
-  height: 500px;          /* menjaga rasio aspek */     /* batas tinggi maksimum */
+  height: 500px;          /* menjaga rasio aspek /     / batas tinggi maksimum */
   object-fit: cover;     /* menyesuaikan gambar agar tetap rapi */
   border-radius: 20px;   /* opsional: beri sudut membulat */
 }
@@ -43,10 +43,6 @@ a:hover {
     font-size: 28px;
   }
   
-  .navbar-nav .nav-link {
-    font-family: 'Lora', serif;
-    font-weight: 600;
-  }
   
   
   .lora-font {
@@ -64,4 +60,29 @@ html, body {
 
 main {
     flex: 1;
+}
+
+ td {
+  border: 2px solid #000 !important;
+  vertical-align: top;
+}
+
+th {
+  background-color: #0d6efd !important;
+  color: white !important;
+  border: 2px solid #000 !important;
+}
+
+
+a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.table-large {
+  font-size: 22px;
 }
